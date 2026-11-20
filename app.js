@@ -66,29 +66,34 @@ function pixel(){
 }
 
 function shepherd(){
-  return `<svg viewBox="0 0 300 210" role="img" aria-label="A German Shepherd dog">
-  <g transform="rotate(-30 52 175)"><rect x="28" y="170" width="48" height="10" rx="5" fill="#f3e6cf"/>
-    <circle cx="28" cy="170" r="8" fill="#f3e6cf"/><circle cx="28" cy="180" r="8" fill="#f3e6cf"/>
-    <circle cx="76" cy="170" r="8" fill="#f3e6cf"/><circle cx="76" cy="180" r="8" fill="#f3e6cf"/></g>
-  <circle cx="254" cy="180" r="17" fill="#cfe04a"/><path d="M240 170q14 10 28 0M240 190q14-10 28 0" stroke="#fff" stroke-width="3" fill="none"/>
-  <ellipse cx="150" cy="200" rx="78" ry="30" fill="#c8873a"/>
-  <ellipse cx="150" cy="198" rx="34" ry="20" fill="#e8b878"/>
-  <path d="M102 92L76 6l66 52z" fill="#2a1f18"/><path d="M198 92L224 6l-66 52z" fill="#2a1f18"/>
-  <path d="M102 78L86 26l40 34z" fill="#e0a868"/><path d="M198 78L214 26l-40 34z" fill="#e0a868"/>
-  <ellipse cx="150" cy="110" rx="70" ry="62" fill="#c8873a"/>
-  <path d="M104 74Q150 38 196 74Q178 98 150 104Q122 98 104 74z" fill="#2a1f18"/>
-  <ellipse cx="114" cy="134" rx="22" ry="20" fill="#e0a868"/><ellipse cx="186" cy="134" rx="22" ry="20" fill="#e0a868"/>
-  <ellipse cx="150" cy="142" rx="34" ry="26" fill="#e8b878"/>
-  <ellipse cx="150" cy="122" rx="15" ry="24" fill="#2a1f18"/>
-  <ellipse cx="121" cy="86" rx="7" ry="4" fill="#e0a868"/><ellipse cx="179" cy="86" rx="7" ry="4" fill="#e0a868"/>
-  <circle cx="125" cy="101" r="9" fill="#3a2210"/><circle cx="175" cy="101" r="9" fill="#3a2210"/>
-  <circle cx="128" cy="98" r="3" fill="#fff"/><circle cx="178" cy="98" r="3" fill="#fff"/>
-  <ellipse cx="150" cy="134" rx="13" ry="9" fill="#111"/><ellipse cx="146" cy="131" rx="4" ry="2" fill="#555"/>
-  <path d="M150 143v8" stroke="#2a1f18" stroke-width="3"/>
-  <ellipse cx="150" cy="163" rx="9" ry="11" fill="#f07a8a"/>
-  <path d="M132 152q18 12 36 0" stroke="#2a1f18" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-  <path d="M94 168Q150 194 206 168" stroke="#2f7fc1" stroke-width="12" fill="none" stroke-linecap="round"/>
-  <circle cx="150" cy="190" r="8" fill="#ffd23f"/>
+  const T='#c8873a', L='#e0a868', D='#2a1f18', F='#a96d2c';
+  return `<svg viewBox="0 0 300 210" role="img" aria-label="A German Shepherd dog standing">
+  <ellipse cx="150" cy="194" rx="110" ry="7" fill="#000" opacity=".08"/>
+  <circle cx="268" cy="184" r="11" fill="#cfe04a"/><path d="M259 178q9 6 18 0M259 190q9-6 18 0" stroke="#fff" stroke-width="2.5" fill="none"/>
+  <path d="M74 96Q40 108 36 152Q44 166 54 156Q58 122 86 108z" fill="${T}"/>
+  <path d="M74 96Q48 104 40 128" stroke="${D}" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M100 104Q90 132 100 150L98 184H110L116 148Q114 124 122 108z" fill="${F}"/>
+  <ellipse cx="104" cy="190" rx="10" ry="5" fill="${F}"/>
+  <path d="M176 116L178 186H190L192 116z" fill="${F}"/><ellipse cx="187" cy="190" rx="10" ry="5" fill="${F}"/>
+  <ellipse cx="136" cy="106" rx="68" ry="31" fill="${T}"/>
+  <ellipse cx="92" cy="120" rx="24" ry="28" fill="${T}"/>
+  <path d="M80 112Q70 136 84 154L80 186H94L100 152Q98 132 106 116z" fill="${T}"/>
+  <ellipse cx="88" cy="191" rx="11" ry="5" fill="${T}"/>
+  <path d="M194 116L198 186H212L210 114z" fill="${T}"/><ellipse cx="208" cy="191" rx="11" ry="5" fill="${T}"/>
+  <path d="M74 98Q86 72 138 74Q182 76 196 94Q172 102 140 100Q100 102 74 98z" fill="${D}"/>
+  <ellipse cx="196" cy="112" rx="18" ry="24" fill="${L}"/>
+  <path d="M164 98Q182 62 204 42L234 64Q224 92 214 118z" fill="${T}"/>
+  <path d="M206 42L212 6L232 34z" fill="${D}"/><path d="M211 35L214 16L226 33z" fill="${L}"/>
+  <ellipse cx="224" cy="56" rx="27" ry="21" fill="${T}"/>
+  <path d="M236 46L276 56Q283 64 274 72L238 76z" fill="${T}"/>
+  <path d="M206 40Q224 30 240 44L276 55L276 60L238 56Q222 52 206 48z" fill="${D}"/>
+  <ellipse cx="275" cy="61" rx="6" ry="5" fill="#111"/>
+  <path d="M252 72q8 4 18 0" stroke="${D}" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="258" cy="78" rx="5" ry="6" fill="#f07a8a"/>
+  <ellipse cx="228" cy="70" rx="12" ry="7" fill="${L}"/>
+  <circle cx="234" cy="52" r="4.5" fill="#3a2210"/><circle cx="235.5" cy="50.5" r="1.5" fill="#fff"/>
+  <path d="M196 66L214 96" stroke="#2f7fc1" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="210" cy="102" r="5" fill="#ffd23f"/>
   </svg>`;
 }
 
