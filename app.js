@@ -97,8 +97,31 @@ function shepherd(){
   </svg>`;
 }
 
-const ART = { 'red-panda': redPanda, bricks, pixel, 'german-shepherd': shepherd };
-const THEME_NAMES = { 'red-panda':'Red panda', bricks:'Toy bricks', pixel:'Pixel world', 'german-shepherd':'German Shepherd', plain:'Plain' };
+function adventure(){
+  return `<svg viewBox="0 0 300 210" role="img" aria-label="An adventure island with a hang-glider in the sky">
+  <defs><linearGradient id="adv-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b2bd6"/><stop offset=".6" stop-color="#3d7bff"/><stop offset="1" stop-color="#7fd4ff"/></linearGradient>
+  <linearGradient id="adv-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1fb5d6"/><stop offset="1" stop-color="#0d6fa8"/></linearGradient></defs>
+  <rect width="300" height="210" rx="18" fill="url(#adv-sky)"/>
+  <circle cx="238" cy="46" r="26" fill="#ffd23f"/><circle cx="238" cy="46" r="36" fill="#ffd23f" opacity=".25"/>
+  <g fill="#fff" opacity=".9"><ellipse cx="60" cy="40" rx="30" ry="10"/><ellipse cx="78" cy="32" rx="18" ry="10"/><ellipse cx="62" cy="96" rx="24" ry="8"/></g>
+  <g transform="translate(118 30) rotate(-8)"><path d="M0 22L40 0L80 22Q40 12 0 22z" fill="#ff3d7f"/><path d="M40 0L40 14" stroke="#fff" stroke-width="2"/>
+    <path d="M14 20L38 40M66 20L42 40" stroke="#1b1240" stroke-width="1.5"/><circle cx="40" cy="38" r="5" fill="#1b1240"/><path d="M36 43h8v9h-8z" fill="#ff8a1f"/></g>
+  <rect y="150" width="300" height="60" fill="url(#adv-sea)"/>
+  <path d="M0 160q25-6 50 0t50 0t50 0t50 0t50 0t50 0" stroke="#fff" stroke-width="2" fill="none" opacity=".5"/>
+  <ellipse cx="150" cy="160" rx="110" ry="22" fill="#f6d48a"/>
+  <path d="M60 156Q90 118 150 116Q214 118 240 156z" fill="#3fbf4a"/>
+  <path d="M86 150Q110 128 150 126Q194 128 214 150z" fill="#2e9c3a"/>
+  <g><path d="M106 150Q102 112 112 88" stroke="#8a5a2b" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M112 88q-26-6-36 10q18-8 36-10zM112 88q24-10 38 4q-20-6-38-4zM112 88q-8-20 6-30q-2 18-6 30zM112 88q-20 8-22 26q10-18 22-26zM112 88q18 6 22 24q-12-16-22-24z" fill="#1f8a3a"/></g>
+  <g><path d="M196 150Q200 120 192 100" stroke="#8a5a2b" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M192 100q-24-4-32 10q16-6 32-10zM192 100q22-8 34 6q-18-6-34-6zM192 100q-6-18 8-26q-4 16-8 26zM192 100q16 6 18 22q-10-14-18-22z" fill="#1f8a3a"/></g>
+  <path d="M140 152h22l-3-16h-16z" fill="#c8873a"/><path d="M136 138h30l-15-12z" fill="#ff3d7f"/>
+  <circle cx="242" cy="170" r="3" fill="#fff" opacity=".7"/><circle cx="52" cy="176" r="2.5" fill="#fff" opacity=".7"/>
+  </svg>`;
+}
+
+const ART = { 'red-panda': redPanda, bricks, pixel, 'german-shepherd': shepherd, adventure };
+const THEME_NAMES = { 'red-panda':'Red panda', bricks:'Toy bricks', pixel:'Pixel world', 'german-shepherd':'German Shepherd', adventure:'Adventure island', plain:'Plain' };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const app = document.getElementById('app');
 

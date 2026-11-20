@@ -20,7 +20,7 @@ The pages update within a minute or two.
 | --- | --- |
 | Give a student a game | Add the game's id to their `games` list, e.g. `"phonics"` |
 | Take a game away | Delete the game's id from their `games` list |
-| Change a theme | Change `theme` to `"red-panda"`, `"bricks"`, `"pixel"`, `"german-shepherd"` or `"plain"` |
+| Change a theme | Change `theme` to `"red-panda"`, `"bricks"`, `"pixel"`, `"german-shepherd"`, `"adventure"` or `"plain"` |
 | Remove the theme | Set `theme` to `"plain"` |
 
 Keep the quotes and commas as they are: ids sit in quotes, separated by commas.
