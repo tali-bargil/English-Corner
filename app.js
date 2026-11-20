@@ -97,31 +97,35 @@ function shepherd(){
   </svg>`;
 }
 
-function adventure(){
-  return `<svg viewBox="0 0 300 210" role="img" aria-label="An adventure island with a hang-glider in the sky">
-  <defs><linearGradient id="adv-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b2bd6"/><stop offset=".6" stop-color="#3d7bff"/><stop offset="1" stop-color="#7fd4ff"/></linearGradient>
-  <linearGradient id="adv-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1fb5d6"/><stop offset="1" stop-color="#0d6fa8"/></linearGradient></defs>
-  <rect width="300" height="210" rx="18" fill="url(#adv-sky)"/>
-  <circle cx="238" cy="46" r="26" fill="#ffd23f"/><circle cx="238" cy="46" r="36" fill="#ffd23f" opacity=".25"/>
-  <g fill="#fff" opacity=".9"><ellipse cx="60" cy="40" rx="30" ry="10"/><ellipse cx="78" cy="32" rx="18" ry="10"/><ellipse cx="62" cy="96" rx="24" ry="8"/></g>
-  <g transform="translate(118 30) rotate(-8)"><path d="M0 22L40 0L80 22Q40 12 0 22z" fill="#ff3d7f"/><path d="M40 0L40 14" stroke="#fff" stroke-width="2"/>
-    <path d="M14 20L38 40M66 20L42 40" stroke="#1b1240" stroke-width="1.5"/><circle cx="40" cy="38" r="5" fill="#1b1240"/><path d="M36 43h8v9h-8z" fill="#ff8a1f"/></g>
-  <rect y="150" width="300" height="60" fill="url(#adv-sea)"/>
-  <path d="M0 160q25-6 50 0t50 0t50 0t50 0t50 0t50 0" stroke="#fff" stroke-width="2" fill="none" opacity=".5"/>
-  <ellipse cx="150" cy="160" rx="110" ry="22" fill="#f6d48a"/>
-  <path d="M60 156Q90 118 150 116Q214 118 240 156z" fill="#3fbf4a"/>
-  <path d="M86 150Q110 128 150 126Q194 128 214 150z" fill="#2e9c3a"/>
-  <g><path d="M106 150Q102 112 112 88" stroke="#8a5a2b" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <path d="M112 88q-26-6-36 10q18-8 36-10zM112 88q24-10 38 4q-20-6-38-4zM112 88q-8-20 6-30q-2 18-6 30zM112 88q-20 8-22 26q10-18 22-26zM112 88q18 6 22 24q-12-16-22-24z" fill="#1f8a3a"/></g>
-  <g><path d="M196 150Q200 120 192 100" stroke="#8a5a2b" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <path d="M192 100q-24-4-32 10q16-6 32-10zM192 100q22-8 34 6q-18-6-34-6zM192 100q-6-18 8-26q-4 16-8 26zM192 100q16 6 18 22q-10-14-18-22z" fill="#1f8a3a"/></g>
-  <path d="M140 152h22l-3-16h-16z" fill="#c8873a"/><path d="M136 138h30l-15-12z" fill="#ff3d7f"/>
-  <circle cx="242" cy="170" r="3" fill="#fff" opacity=".7"/><circle cx="52" cy="176" r="2.5" fill="#fff" opacity=".7"/>
+function robots(){
+  const bot=(x,y,body,face,eyes)=>`<g transform="translate(${x} ${y})">
+    <path d="M30 -2v-14" stroke="#33415c" stroke-width="3"/><circle cx="30" cy="-18" r="5" fill="#ff7a1a"/>
+    <rect x="0" y="0" width="60" height="46" rx="10" fill="${body}"/>
+    <rect x="8" y="8" width="44" height="28" rx="6" fill="${face}"/>
+    ${eyes}
+    <rect x="-6" y="16" width="6" height="14" rx="3" fill="#33415c"/><rect x="60" y="16" width="6" height="14" rx="3" fill="#33415c"/>
+    <rect x="22" y="46" width="16" height="6" fill="#33415c"/>
+    <rect x="4" y="52" width="52" height="40" rx="8" fill="${body}"/>
+    <circle cx="18" cy="64" r="4" fill="#ff7a1a"/><circle cx="30" cy="64" r="4" fill="#ffd23f"/><circle cx="42" cy="64" r="4" fill="#3ddc97"/>
+    <rect x="14" y="74" width="32" height="10" rx="3" fill="#33415c"/><rect x="17" y="77" width="10" height="4" rx="2" fill="#3ddc97"/>
+    <rect x="-8" y="58" width="12" height="26" rx="6" fill="#33415c"/><rect x="56" y="58" width="12" height="26" rx="6" fill="#33415c"/>
+    <rect x="12" y="92" width="12" height="16" rx="3" fill="#33415c"/><rect x="36" y="92" width="12" height="16" rx="3" fill="#33415c"/>
+    <rect x="8" y="106" width="20" height="7" rx="3" fill="${body}"/><rect x="32" y="106" width="20" height="7" rx="3" fill="${body}"/></g>`;
+  const gear=(cx,cy,r,c)=>{let t='';for(let i=0;i<8;i++)t+=`<rect x="${cx-r*.18}" y="${cy-r*1.3}" width="${r*.36}" height="${r*.5}" rx="2" fill="${c}" transform="rotate(${i*45} ${cx} ${cy})"/>`;return t+`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${c}"/><circle cx="${cx}" cy="${cy}" r="${r*.4}" fill="#e7f3fb"/>`;};
+  return `<svg viewBox="0 0 300 210" role="img" aria-label="Three friendly robots">
+  <rect width="300" height="210" rx="18" fill="#e7f3fb"/>
+  <path d="M0 40h60v30h40M300 30h-50v40h-30M0 150h30v-20h20" stroke="#bcd7ea" stroke-width="3" fill="none"/>
+  <circle cx="100" cy="70" r="4" fill="#bcd7ea"/><circle cx="220" cy="70" r="4" fill="#bcd7ea"/><circle cx="50" cy="130" r="4" fill="#bcd7ea"/>
+  ${gear(150,34,14,'#bcd7ea')}${gear(200,52,9,'#bcd7ea')}
+  <rect x="0" y="196" width="300" height="14" fill="#c9dcea"/>
+  ${bot(20,82,'#4fa3e0','#1b2b45','<rect x="16" y="15" width="8" height="10" rx="2" fill="#3ddc97"/><rect x="36" y="15" width="8" height="10" rx="2" fill="#3ddc97"/>')}
+  ${bot(120,82,'#ff7a1a','#1b2b45','<circle cx="21" cy="19" r="5" fill="#ffd23f"/><circle cx="39" cy="19" r="5" fill="#ffd23f"/><path d="M22 28q8 5 16 0" stroke="#ffd23f" stroke-width="2.5" fill="none" stroke-linecap="round"/>')}
+  ${bot(218,82,'#3ddc97','#1b2b45','<path d="M15 21q5-6 10 0M35 21q5-6 10 0" stroke="#4fa3e0" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M24 28h12" stroke="#4fa3e0" stroke-width="3" stroke-linecap="round"/>')}
   </svg>`;
 }
 
-const ART = { 'red-panda': redPanda, bricks, pixel, 'german-shepherd': shepherd, adventure };
-const THEME_NAMES = { 'red-panda':'Red panda', bricks:'Toy bricks', pixel:'Pixel world', 'german-shepherd':'German Shepherd', adventure:'Adventure island', plain:'Plain' };
+const ART = { 'red-panda': redPanda, bricks, pixel, 'german-shepherd': shepherd, robots };
+const THEME_NAMES = { 'red-panda':'Red panda', bricks:'Toy bricks', pixel:'Pixel world', 'german-shepherd':'German Shepherd', robots:'Robots', plain:'Plain' };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const app = document.getElementById('app');
 

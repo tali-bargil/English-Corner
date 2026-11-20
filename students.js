@@ -4,7 +4,7 @@
 //  To give a student a game:    add its id to their games list
 //  To take a game away:         delete its id from the list
 //  To change a theme:           change the theme word
-//     themes: "red-panda", "bricks", "pixel", "german-shepherd", "adventure", "plain"
+//     themes: "red-panda", "bricks", "pixel", "german-shepherd", "robots", "plain"
 //
 //  Game ids are listed in games.js.
 //  Keep the quotes and commas exactly as they are.
@@ -32,7 +32,7 @@ const STUDENTS = {
 
   noam: {
     name: "Noam",
-    theme: "adventure",
+    theme: "robots",
     games: ["vocabulary-bingo", "drive-home", "phonics", "word-by-word-reader"]
   }
 
