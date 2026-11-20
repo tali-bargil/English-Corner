@@ -53,6 +53,11 @@ body[data-theme=pixel] .game .ic{border-radius:0;border:3px solid #1f2a1a}
 body[data-theme=pixel] .game:nth-child(even) .ic{background:#8a5a2b}
 body[data-theme=pixel] .art svg{shape-rendering:crispEdges}
 
+/* german shepherd */
+body[data-theme=german-shepherd]{--bg:#f6ecdc;--panel:#fffaf2;--ink:#2a1f18;--muted:#6b5442;--accent:#2f7fc1;--title:'Baloo 2',sans-serif}
+body[data-theme=german-shepherd] .game{box-shadow:0 6px 0 #dcc4a0}
+body[data-theme=german-shepherd] .game:nth-child(even) .ic{background:#c8873a}
+
 /* ---------- master page ---------- */
 .master h1{font-size:clamp(30px,5vw,42px);line-height:1.05;margin:0 0 8px}
 .master .lead{margin:0 0 32px;color:var(--muted)}

@@ -65,8 +65,35 @@ function pixel(){
   return `<svg viewBox="0 0 300 210" role="img" aria-label="A pixel world with hills, trees and a sun">${r}</svg>`;
 }
 
-const ART = { 'red-panda': redPanda, bricks, pixel };
-const THEME_NAMES = { 'red-panda':'Red panda', bricks:'Toy bricks', pixel:'Pixel world', plain:'Plain' };
+function shepherd(){
+  return `<svg viewBox="0 0 300 210" role="img" aria-label="A German Shepherd dog">
+  <g transform="rotate(-30 52 175)"><rect x="28" y="170" width="48" height="10" rx="5" fill="#f3e6cf"/>
+    <circle cx="28" cy="170" r="8" fill="#f3e6cf"/><circle cx="28" cy="180" r="8" fill="#f3e6cf"/>
+    <circle cx="76" cy="170" r="8" fill="#f3e6cf"/><circle cx="76" cy="180" r="8" fill="#f3e6cf"/></g>
+  <circle cx="254" cy="180" r="17" fill="#cfe04a"/><path d="M240 170q14 10 28 0M240 190q14-10 28 0" stroke="#fff" stroke-width="3" fill="none"/>
+  <ellipse cx="150" cy="200" rx="78" ry="30" fill="#c8873a"/>
+  <ellipse cx="150" cy="198" rx="34" ry="20" fill="#e8b878"/>
+  <path d="M102 92L76 6l66 52z" fill="#2a1f18"/><path d="M198 92L224 6l-66 52z" fill="#2a1f18"/>
+  <path d="M102 78L86 26l40 34z" fill="#e0a868"/><path d="M198 78L214 26l-40 34z" fill="#e0a868"/>
+  <ellipse cx="150" cy="110" rx="70" ry="62" fill="#c8873a"/>
+  <path d="M104 74Q150 38 196 74Q178 98 150 104Q122 98 104 74z" fill="#2a1f18"/>
+  <ellipse cx="114" cy="134" rx="22" ry="20" fill="#e0a868"/><ellipse cx="186" cy="134" rx="22" ry="20" fill="#e0a868"/>
+  <ellipse cx="150" cy="142" rx="34" ry="26" fill="#e8b878"/>
+  <ellipse cx="150" cy="122" rx="15" ry="24" fill="#2a1f18"/>
+  <ellipse cx="121" cy="86" rx="7" ry="4" fill="#e0a868"/><ellipse cx="179" cy="86" rx="7" ry="4" fill="#e0a868"/>
+  <circle cx="125" cy="101" r="9" fill="#3a2210"/><circle cx="175" cy="101" r="9" fill="#3a2210"/>
+  <circle cx="128" cy="98" r="3" fill="#fff"/><circle cx="178" cy="98" r="3" fill="#fff"/>
+  <ellipse cx="150" cy="134" rx="13" ry="9" fill="#111"/><ellipse cx="146" cy="131" rx="4" ry="2" fill="#555"/>
+  <path d="M150 143v8" stroke="#2a1f18" stroke-width="3"/>
+  <ellipse cx="150" cy="163" rx="9" ry="11" fill="#f07a8a"/>
+  <path d="M132 152q18 12 36 0" stroke="#2a1f18" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M94 168Q150 194 206 168" stroke="#2f7fc1" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <circle cx="150" cy="190" r="8" fill="#ffd23f"/>
+  </svg>`;
+}
+
+const ART = { 'red-panda': redPanda, bricks, pixel, 'german-shepherd': shepherd };
+const THEME_NAMES = { 'red-panda':'Red panda', bricks:'Toy bricks', pixel:'Pixel world', 'german-shepherd':'German Shepherd', plain:'Plain' };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const app = document.getElementById('app');
 
