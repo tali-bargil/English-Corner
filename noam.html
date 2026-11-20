@@ -9,9 +9,11 @@
 </head>
 <body>
 <div id="app"></div>
-<script src="games.js"></script>
-<script src="students.js"></script>
 <script>const STUDENT = "noam";</script>
-<script src="app.js"></script>
+<script>
+// Always load the newest lists (skips the browser's old copy)
+(function(){var v=Date.now(),files=['games.js','students.js','app.js'],i=0;
+function next(){if(i>=files.length)return;var s=document.createElement('script');s.src=files[i++]+'?v='+v;s.onload=next;document.body.appendChild(s);}next();})();
+</script>
 </body>
 </html>
