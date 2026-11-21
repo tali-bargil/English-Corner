@@ -38,6 +38,13 @@ const GAMES = {
     about: "Listen to the word and find it on your bingo card.",
     url: "https://tali-bargil.github.io/Vocabulary-Bingo/",
     icon: "grid"
+  },
+
+  "say-it-to-open-it": {
+    name: "Say It to Open It",
+    about: "Read or repeat out loud to open each door. Museum or mountain.",
+    url: "https://tali-bargil.github.io/Say-It-To-Open-It/",
+    icon: "mic"
   }
 
 };

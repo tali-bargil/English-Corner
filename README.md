@@ -31,7 +31,7 @@ Keep the quotes and commas as they are: ids sit in quotes, separated by commas.
 2. Give it a new id, name, short description and link.
 3. Add that id to any student in `students.js`.
 
-Icons you can use: `cards`, `book`, `sound`, `car`, `grid`.
+Icons you can use: `cards`, `book`, `sound`, `car`, `grid`, `mic`.
 
 ## Adding a new student
 
