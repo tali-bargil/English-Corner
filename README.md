@@ -23,6 +23,7 @@ The pages update within a minute or two.
 | Change a theme | Change `theme` to `"red-panda"`, `"bricks"`, `"pixel"`, `"german-shepherd"`, `"robots"` or `"plain"` |
 | Remove the theme | Set `theme` to `"plain"` |
 | Start a student higher in Say It to Open It | Add `start: "medium",` to the student (or `"hard"`, or a level like `"medium-4"`) |
+| Give a student all 8 levels of Say It to Open It | Add `mode: "intermediate",` to the student (no mode = Beginner, levels 1–5) |
 
 Keep the quotes and commas as they are: ids sit in quotes, separated by commas.
 

@@ -10,6 +10,10 @@
 //     add  start: "medium"  to a student to open the game at Medium, Level 1.
 //     options: "easy", "medium", "hard", or a band + level like "medium-4"
 //
+//  Say It to Open It mode (optional):
+//     no mode line = Beginner (levels 1-5)
+//     add  mode: "intermediate"  for all 8 levels
+//
 //  Game ids are listed in games.js.
 //  Keep the quotes and commas exactly as they are.
 // =====================================================

@@ -139,7 +139,8 @@ function renderStudent(id){
   document.title = s.name + "'s English Corner";
   const list = (s.games || []).filter(g => GAMES[g]).map(g => {
     const G = GAMES[g];
-    const href = G.url + (G.usesStart && s.start ? '?start=' + encodeURIComponent(s.start) : '');
+    const opts = G.usesStart ? [s.start && 'start=' + encodeURIComponent(s.start), s.mode && 'mode=' + encodeURIComponent(s.mode)].filter(Boolean) : [];
+    const href = G.url + (opts.length ? '?' + opts.join('&') : '');
     return `<a class="game" href="${esc(href)}"><span class="ic">${ICONS[G.icon] || ICONS.cards}</span><span><h2>${esc(G.name)}</h2><p>${esc(G.about)}</p><span class="go">Play →</span></span></a>`;
   }).join('');
   app.innerHTML = `<div class="wrap">
@@ -155,7 +156,7 @@ function renderMaster(){
   const ids = Object.keys(STUDENTS);
   const kids = ids.map(id => {
     const s = STUDENTS[id], url = base + id + '.html';
-    const games = (s.games || []).map(g => `<li>${esc(GAMES[g] ? GAMES[g].name : g + ' (not found in games.js)')}${GAMES[g] && GAMES[g].usesStart && s.start ? ' <span class="theme">(starts at ' + esc(s.start) + ')</span>' : ''}</li>`).join('');
+    const games = (s.games || []).map(g => `<li>${esc(GAMES[g] ? GAMES[g].name : g + ' (not found in games.js)')}${GAMES[g] && GAMES[g].usesStart ? ' <span class="theme">(' + esc(s.mode || 'beginner') + (s.start ? ', starts at ' + esc(s.start) : '') + ')</span>' : ''}</li>`).join('');
     return `<div class="kid"><h3>${esc(s.name)}</h3><div class="theme">Theme: ${esc(THEME_NAMES[s.theme] || s.theme)}</div>
       <ul>${games || '<li>No games yet</li>'}</ul>
       <div class="row"><a class="btn" href="${esc(id)}.html">Open page</a><button class="btn alt" data-copy="${esc(url)}">Copy link</button></div></div>`;
