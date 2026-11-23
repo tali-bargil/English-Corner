@@ -15,13 +15,13 @@ const STUDENTS = {
   ariel: {
     name: "Ariel",
     theme: "pixel",
-    games: ["phonics", "word-by-word-reader", "drive-home", "vocabulary-bingo"]
+    games: ["phonics", "word-by-word-reader", "drive-home", "vocabulary-bingo", "say-it-to-open-it", "whats-the-weather"]
   },
 
   kedem: {
     name: "Kedem",
     theme: "red-panda",
-    games: ["vocabulary-bingo", "word-by-word-reader"]
+    games: ["vocabulary-bingo", "word-by-word-reader", "whats-the-weather"]
   },
 
   liad: {
