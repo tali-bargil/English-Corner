@@ -45,14 +45,16 @@ const GAMES = {
     about: "Read, listen, speak and write to open every door. Museum or mountain.",
     url: "https://tali-bargil.github.io/Say-It-To-Open-It/",
     icon: "mic",
-    usesStart: true
+    usesStart: true,
+    teacherMode: true
   },
 
   "whats-the-weather": {
     name: "What's the Weather?",
     about: "Learn weather and season words: see them, hear them, say them.",
     url: "https://tali-bargil.github.io/What-s-The-Weather/",
-    icon: "weather"
+    icon: "weather",
+    teacherMode: true
   }
 
 };

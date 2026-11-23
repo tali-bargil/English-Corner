@@ -160,7 +160,7 @@ function renderMaster(){
       <ul>${games || '<li>No games yet</li>'}</ul>
       <div class="row"><a class="btn" href="${esc(id)}.html">Open page</a><button class="btn alt" data-copy="${esc(url)}">Copy link</button></div></div>`;
   }).join('');
-  const rows = Object.keys(GAMES).map(g => `<tr><td><a href="${esc(GAMES[g].url)}">${esc(GAMES[g].name)}</a></td><td><code>${esc(g)}</code></td>${ids.map(id => `<td class="c">${(STUDENTS[id].games || []).includes(g) ? '✓' : ''}</td>`).join('')}</tr>`).join('');
+  const rows = Object.keys(GAMES).map(g => `<tr><td><a href="${esc(GAMES[g].url)}">${esc(GAMES[g].name)}</a>${GAMES[g].teacherMode ? ` <a class="tlink" href="${esc(GAMES[g].url)}?admin" title="Every level open, nothing saved">🧑‍🏫 Teacher link</a>` : ''}</td><td><code>${esc(g)}</code></td>${ids.map(id => `<td class="c">${(STUDENTS[id].games || []).includes(g) ? '✓' : ''}</td>`).join('')}</tr>`).join('');
   app.innerHTML = `<div class="wrap master">
     <h1>English Corner</h1><p class="lead">Teacher page. Don't share this link with students: send each child their own page.</p>
     <h2>Students</h2><div class="kids">${kids}</div>

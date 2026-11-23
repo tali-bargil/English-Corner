@@ -32,6 +32,8 @@ Keep the quotes and commas as they are: ids sit in quotes, separated by commas.
 2. Give it a new id, name, short description and link.
 3. Add that id to any student in `students.js`.
 
+A game with levels that unlock one by one can have a teacher link: add `teacherMode: true` to it in `games.js`. The teacher page then shows a 🧑‍🏫 Teacher link that opens the game with every level open and nothing saved (the game itself has to support `?admin`).
+
 Icons you can use: `cards`, `book`, `sound`, `car`, `grid`, `mic`, `weather`.
 
 ## Adding a new student
