@@ -42,9 +42,10 @@ const GAMES = {
 
   "say-it-to-open-it": {
     name: "Say It to Open It",
-    about: "Read or repeat out loud to open each door. Museum or mountain.",
+    about: "Read, listen, speak and write to open every door. Museum or mountain.",
     url: "https://tali-bargil.github.io/Say-It-To-Open-It/",
-    icon: "mic"
+    icon: "mic",
+    usesStart: true
   },
 
   "whats-the-weather": {

@@ -22,6 +22,7 @@ The pages update within a minute or two.
 | Take a game away | Delete the game's id from their `games` list |
 | Change a theme | Change `theme` to `"red-panda"`, `"bricks"`, `"pixel"`, `"german-shepherd"`, `"robots"` or `"plain"` |
 | Remove the theme | Set `theme` to `"plain"` |
+| Start a student higher in Say It to Open It | Add `start: "medium",` to the student (or `"hard"`, or a level like `"medium-4"`) |
 
 Keep the quotes and commas as they are: ids sit in quotes, separated by commas.
 
