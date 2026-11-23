@@ -23,6 +23,7 @@ const STUDENTS = {
   ariel: {
     name: "Ariel",
     theme: "pixel",
+    mode: "beginner",
     games: ["phonics", "word-by-word-reader", "drive-home", "vocabulary-bingo", "say-it-to-open-it", "whats-the-weather"]
   },
 
