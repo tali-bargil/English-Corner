@@ -26,6 +26,13 @@ const GAMES = {
     icon: "book"
   },
 
+  "ariel-jack-russell": {
+    name: "The Jack Russell Terrier",
+    about: "Read the Jack Russell story word by word, then sentence by sentence.",
+    url: "https://tali-bargil.github.io/Word-by-Word-Reader/ariel.html",
+    icon: "book"
+  },
+
   "phonics": {
     name: "Phonics Command",
     about: "Three fast missions: sounds, b and d, and listening.",
