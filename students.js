@@ -36,7 +36,7 @@ const STUDENTS = {
   liad: {
     name: "Liad",
     theme: "bricks",
-    games: ["word-flip-cards", "vocabulary-bingo"]
+    games: ["liad-expensive-dog", "word-flip-cards", "vocabulary-bingo"]
   },
 
   noam: {

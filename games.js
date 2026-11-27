@@ -19,6 +19,13 @@ const GAMES = {
     icon: "book"
   },
 
+  "liad-expensive-dog": {
+    name: "The Most Expensive Dog",
+    about: "Read the dog story word by word. Tap עב for Hebrew help.",
+    url: "https://tali-bargil.github.io/Word-by-Word-Reader/liad.html",
+    icon: "book"
+  },
+
   "phonics": {
     name: "Phonics Command",
     about: "Three fast missions: sounds, b and d, and listening.",
